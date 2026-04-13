@@ -1,8 +1,8 @@
 # 📘 Introducción
 
-Este repositorio define la configuración base del entorno de desarrollo para frontend moderno.
+Este repositorio define el **estándar base del entorno de desarrollo para frontend moderno**.
 
-Está diseñado para preparar una máquina desde cero de forma:
+Su objetivo es preparar una máquina desde cero de forma:
 
 * limpia
 * consistente
@@ -16,66 +16,50 @@ Este manual está pensado para:
 
 * Desarrolladores frontend
 * Nuevos miembros de un equipo (onboarding)
-* Estudiantes que quieren un entorno profesional
 * Desarrolladores que cambian de máquina
 
 ---
 
-# 🧩 ¿Qué cubre este repositorio?
+# 🧩 Alcance
 
 Este repositorio cubre únicamente la **infraestructura del desarrollador**:
 
-* Sistema operativo preparado
-* Terminal configurada
-* Git listo para trabajar
-* Node.js correctamente instalado
-* Package manager definido
-* Editor configurado
-* Navegador listo para debugging
+* Sistema operativo
+* Terminal
+* Git
+* Node.js
+* Package manager
+* Editor
+* Navegador y herramientas de debugging
+
+No cubre arquitectura, frameworks ni herramientas avanzadas.
 
 ---
 
-# 🚫 ¿Qué NO cubre?
-
-Este repositorio NO incluye:
-
-* Arquitectura frontend
-* Frameworks (React, Next, etc.)
-* Bundlers (Vite, RSBuild, etc.)
-* Testing
-* CI/CD
-* Dockerización de aplicaciones
-* Estrategias avanzadas de Git
-
-👉 Estos temas se cubrirán en repositorios especializados.
-
----
-
-# 🧠 Filosofía del entorno
+# 🧠 Filosofía
 
 Este entorno sigue principios claros:
 
-* Opinionated → hay decisiones definidas
+* Opinionated → decisiones definidas
 * Minimalista → solo lo necesario
-* Profesional → basado en prácticas reales
+* Profesional → prácticas reales de industria
 * Reproducible → mismo entorno en cualquier máquina
 
 ---
 
-# ⚙️ ¿Qué vas a lograr?
+# ⚙️ Resultado esperado
 
-Al finalizar este manual tendrás:
+Al finalizar tendrás:
 
 * Un entorno limpio y sin conflictos
 * Herramientas correctamente instaladas
 * Configuración consistente con otros desarrolladores
-* Base sólida para cualquier proyecto frontend
 
 ---
 
-# 🚀 Flujo recomendado
+# 🚀 Flujo de uso
 
-Sigue los pasos en este orden:
+Sigue los módulos en este orden:
 
 1. System Setup
 2. Shell
@@ -90,42 +74,28 @@ Sigue los pasos en este orden:
 
 # ✅ Definition of Done
 
-Tu entorno está listo cuando:
+El entorno está listo cuando:
 
 * Git funciona con SSH
-* Node LTS está instalado correctamente
+* Node LTS está correctamente instalado
 * Corepack está habilitado
 * pnpm funciona sin errores
 * VSCode abre desde terminal
-* Puedes empezar un proyecto sin conflictos
-
----
-
-# 💡 Nota importante
-
-Este repositorio no busca enseñar herramientas en profundidad.
-
-Su objetivo es:
-
-> asegurar que todos los desarrolladores parten de un entorno base consistente y profesional.
 
 ---
 
 # 🧭 Cómo usar este repositorio
 
 * Sigue los pasos en orden
-* No saltes secciones
-* No instales herramientas fuera de este flujo
+* No instales herramientas fuera del flujo definido
 * Si algo falla, revisa la sección de verificación
 
 ---
 
-# 📌 Resultado final
+# 💡 Nota
 
-Un entorno:
+Este repositorio no busca enseñar herramientas en profundidad.
 
-* estable
-* limpio
-* alineado con estándares profesionales
+Su objetivo es:
 
-Listo para desarrollar cualquier aplicación frontend.
+> asegurar una base de entorno consistente y profesional para todos los desarrolladores.

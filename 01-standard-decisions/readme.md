@@ -4,31 +4,24 @@ Este documento define las decisiones oficiales del entorno de desarrollo.
 
 Su objetivo es:
 
-* Evitar ambigüedad en herramientas
 * Asegurar consistencia entre desarrolladores
-* Reducir problemas de configuración
+* Evitar conflictos de configuración
 * Estandarizar el onboarding técnico
 
 ---
 
-# 🧠 Principio clave
+# 🧠 Principio
 
-> Todos los desarrolladores deben trabajar con el mismo stack base.
+> Todos los desarrolladores trabajan con el mismo stack base.
 
-No se recomienda modificar estas decisiones sin un motivo justificado.
+Estas decisiones deben respetarse en todos los entornos.
 
 ---
 
 # 🖥️ Sistema operativo
 
-## Windows
-
-* Uso recomendado: **WSL (Windows Subsystem for Linux)**
-* Alternativa: PowerShell (solo si es necesario)
-
-## macOS
-
-* Uso estándar: entorno nativo con zsh
+* **Windows → WSL (recomendado)**
+* **macOS → entorno nativo**
 
 ---
 
@@ -36,9 +29,7 @@ No se recomienda modificar estas decisiones sin un motivo justificado.
 
 * macOS → `zsh`
 * Windows (WSL) → `bash` o `zsh`
-* Windows (nativo) → PowerShell (opcional)
-
-👉 Se priorizan shells tipo Unix para compatibilidad con tooling moderno.
+* Windows (nativo) → PowerShell (solo si es necesario)
 
 ---
 
@@ -51,28 +42,19 @@ No se recomienda modificar estas decisiones sin un motivo justificado.
 
 * Uso exclusivo de versiones **LTS**
 
-* ❌ No instalar Node manualmente desde web oficial
+* ❌ No instalar Node manualmente
 
 ---
 
 # 📦 Package Manager
 
-## Manager principal
-
-* **pnpm**
-
-## Gestión de versiones
-
-* **Corepack**
-
----
+* Manager principal → **pnpm**
+* Gestión de versiones → **Corepack**
 
 ## Reglas
 
-* Todos los proyectos deben usar `pnpm`
-* La versión del package manager debe estar definida en `package.json`
-
-Ejemplo:
+* Todos los proyectos usan `pnpm`
+* La versión debe definirse en `package.json`
 
 ```json
 {
@@ -84,52 +66,39 @@ Ejemplo:
 
 # 🔐 Git
 
-## Autenticación
-
-* Uso obligatorio de **SSH**
-
-## Configuración base
-
-* `user.name`
-* `user.email`
-
-## Commit signing
-
-* Recomendado: **SSH signing**
+* Autenticación → **SSH (obligatorio)**
+* Configuración base → `user.name`, `user.email`
+* Commit signing → recomendado (SSH)
 
 ---
 
 # 🧑‍💻 Editor
 
-## Editor estándar
-
-* **VSCode**
+* Editor estándar → **VSCode**
 
 ## Reglas
 
 * Uso de configuración compartida (`.vscode`)
 * Uso de extensiones recomendadas
-* Uso de Settings Sync entre dispositivos
+* Uso de Settings Sync
 
 ---
 
 # 🌐 Navegador
 
-* Recomendado: **Chrome o Edge**
+* Estándar → **Chrome o Edge**
 
-## Uso
+Uso:
 
-* DevTools para debugging
-* Performance analysis
-* Network inspection
+* DevTools
+* Performance
+* Network
 
 ---
 
-# 🧪 Entorno reproducible (opcional)
+# 🧪 Entorno reproducible
 
-## Dev Containers
-
-* Uso recomendado en equipos
+* Dev Containers → recomendado en equipos
 * No obligatorio para proyectos simples
 
 ---
@@ -137,41 +106,27 @@ Ejemplo:
 # 🔒 Seguridad
 
 * Uso de SSH keys seguras
-* Activación de 2FA en servicios
-* No exponer credenciales en repositorios
+* Activación de 2FA
+* No exponer credenciales
 
 ---
 
-# 🚫 Herramientas no recomendadas
+# 🚫 Restricciones
 
 Para mantener consistencia:
 
 * ❌ Instalar Node manualmente
-* ❌ Usar múltiples package managers en un mismo proyecto
-* ❌ Usar autenticación HTTPS en Git
-* ❌ Configuraciones personales no documentadas
+* ❌ Usar múltiples package managers
+* ❌ Usar HTTPS en Git
+* ❌ Configuraciones no documentadas
 
 ---
 
-# 📌 Notas importantes
-
-* Este documento define el estándar del entorno
-* No es una guía paso a paso (eso está en otros módulos)
-* Las decisiones aquí deben respetarse en todos los setups
-
----
-
-# 🎯 Objetivo final
+# 🎯 Resultado esperado
 
 Un entorno donde:
 
 * todos los desarrolladores trabajan igual
 * no hay conflictos de versiones
-* el onboarding es rápido
 * el entorno es predecible
-
----
-
-# 🚀 Resultado
-
-Un estándar base sólido para desarrollo frontend profesional.
+* el onboarding es rápido
